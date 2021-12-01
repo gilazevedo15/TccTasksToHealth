@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  padding: 4px;
+  top: 0.5px;
+  position: static;
+  right: 0;
+  top: 35%;
+  margin-top: -15.3em;
+}
+
+.botao {
+  border: 0;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  background-color: rgb(29, 161, 242);
+  border-radius: 5px;
+  width: 2.9 rem;
+  height: 2.9rem;
+  display: flex;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: filter 0.2s;
+}
+
+.img:hover {
+  background-color: rgb(166, 221, 255);
+}

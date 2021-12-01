@@ -1,5 +1,5 @@
 .overlay {
-    background: rgba(242, 243, 245, 0.8);
+    background: rgba(211, 211, 211, 0.8);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -52,3 +52,8 @@
     font-size: 0;
 
 }
+.container a {
+    color: var(--blue-twitter);
+    font-weight: 600;
+ 
+ }

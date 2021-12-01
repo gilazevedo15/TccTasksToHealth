@@ -8,10 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@okteto/react-oauth2-login": "0.0.7",
+    "@types/styled-components": "^5.1.7",
+    "axios": "^0.21.1",
+    "fi": "0.0.5",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",
+    "next-auth": "^3.29.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-github-login-button": "^1.0.1",
+    "react-icons": "^4.2.0",
+    "react-social": "^1.10.0",
+    "react-switch": "^6.0.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@types/js-cookie": "^2.2.6",

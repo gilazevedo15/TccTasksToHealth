@@ -1,57 +1,35 @@
-import { CompletedChallenges } from "../components/CompletedChallenges";
-import { GetServerSideProps } from 'next'
-import { ExperienceBar } from "../components/ExperienceBar";
-import { Profile } from "../components/Profile";
-import { ChallengeBox } from "../components/ChallengeBox";
+import React from 'react';
+import { useRouter } from 'next/router';
+import { FiGithub, FiLogIn } from 'react-icons/fi';
+import {useSession, signIn, signOut} from 'next-auth/client'
+import styles from '../styles/pages/Login.module.css';
 import Head from 'next/head';
-import styles from '../styles/pages/Home.module.css'
-import { CountdownProvider } from "../contexts/CountdowContext";
-import { Countdown } from "../components/Countdown";
-import { ChallengesProvider } from "../contexts/ChallengesContext";
 
-interface HomeProps {
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number;
-}
+export default function Profile() {
+  const [session] = useSession();  
 
-
-export default function Home(props: HomeProps) {
   return (
-    <ChallengesProvider 
-    level={props.level} 
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}
-    >
-    <div className={styles.conteiner}>
+    <div className={styles.container}>
       <Head>
-        <title>Inicio | Move.it</title>
+        <title>Home | Tasks to Health</title>
       </Head>
-           <ExperienceBar />
-      <CountdownProvider>
-        <section>
-              <div>
-                <Profile />
-                <CompletedChallenges />
-                <Countdown />
-              </div>
-            <div>
-                <ChallengeBox />
-            </div>
-         </section>
-      </CountdownProvider>  
-    </div>
-    </ChallengesProvider>  
-  )
-}
+      <div className={styles.content}>
+      <img src="logo/logoatt.png" alt="Logo" />
+        <strong>Olá, Bem-vindo(a)</strong>
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const { level, currentExperience, challengesCompleted } = ctx.req.cookies
-    return {
-      props: {
-        level: Number(level),
-        currentExperience: Number(currentExperience),
-        challengesCompleted: Number(challengesCompleted)
-      }
-    }
+        <div className={styles.title}>
+          <FiGithub size={36} />
+          <span>Faça login com seu GitHub para iniciar.</span>
+        </div>
+
+        <a>
+        <button type="button" onClick={() => signIn('github')}>
+          Conectar com Github
+          <img src="/icons/githublogo.svg" alt="githublogo" />
+        </button>
+        </a>
+        
+      </div>
+    </div>
+  );
 }
