@@ -25,10 +25,10 @@ export default function Ranking() {
                     <div className={styles.userLeaderbord}>
                         <img src="https://avatars.githubusercontent.com/u/51963952?v=4" alt="Imagem de perfil" />
                         <div className={styles.userLeaderbordDetails}>
-                            <span>kNgill</span>
+                            <span>Mateus Gil</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 100
+                        Level 245
                     </p>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Ranking() {
                             <span>Diego Fernandes</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 93
+                        Level 130
                     </p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ export default function Ranking() {
                             <span>Jonata Santos</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 63
+                        Level 95
                     </p>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ export default function Ranking() {
                             <span>Mayk Brito</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 55
+                        Level 85
                     </p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ export default function Ranking() {
                             <span>Coda</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 52
+                        Level 82
                     </p>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export default function Ranking() {
                             <span>Danilo Caneschi</span>
                             <p>
                                 <img src="icons/level.svg" alt="level" />
-                        Level 40
+                        Level 69
                     </p>
                         </div>
                     </div>
@@ -180,7 +180,7 @@ export default function Ranking() {
                         <span>Weslley Fratini</span>
                         <p>
                             <img src="icons/level.svg" alt="level" />
-                    Level 10
+                    Level 35
                 </p>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function Ranking() {
                 </div>
 
                 <div className={styles.expLeaderbord}>
-                    <span>350</span> <p>xp</p>
+                    <span>355</span> <p>xp</p>
                 </div>
                 </div> 
                 <div className={styles.resultLeaderbord}>
@@ -202,7 +202,7 @@ export default function Ranking() {
                 <div className={styles.userLeaderbord}>
                     <img src="https://avatars.githubusercontent.com/u/70381963?v=4" alt="Imagem de perfil" />
                     <div className={styles.userLeaderbordDetails}>
-                        <span>Weslley Fratini</span>
+                        <span>Gabriel Capitão</span>
                         <p>
                             <img src="icons/level.svg" alt="level" />
                     Level 0
@@ -217,7 +217,18 @@ export default function Ranking() {
                 <div className={styles.expLeaderbord}>
                     <span>0</span> <p>xp</p>
                 </div>
-                </div>     
+                </div>  
+
+                <h1>Desenvolvedores</h1>
+                   
+
+                <div className={styles.devs}>
+                    <div>
+                   
+                        <p><a href="https://www.instagram.com/kaua_gill/">Kauã Gil</a>, <a href="https://www.instagram.com/diego_a.c.r/">Diego Antônio</a>, <a href="https://www.instagram.com/douglas_tonelloo/">Douglas Evaristo</a> e Gabriel Henrique </p>
+                    </div>
+                    <br/>        
+                </div>
             </div>
     )
 }

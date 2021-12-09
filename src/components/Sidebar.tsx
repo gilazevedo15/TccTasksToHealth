@@ -5,18 +5,15 @@ import styles from '../styles/components/Sidebar.module.css';
 import { SidebarContext } from '../contexts/sidebarContext';
 import { useContext, useState } from 'react';
 
-
-
-
-
 export function Sidebar() {
+
   const [homeIsActive, setHomeIsActive] = useState(true)
   const [rankingIsActive, setRankingIsActive] = useState(true)
   return (
     <div className={styles.container}>
       
       <div className={styles.navigation}>
-                <a href="/[username].tsx">
+                <a href="/username.tsx">
                     <img src={ homeIsActive ? ('/icons/homeactive.svg') : ('/icons/home.svg') }/>
                 </a>
                 <a href="/ranking">
